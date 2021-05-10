@@ -9,7 +9,7 @@
  Make sour app have the latest version of python installed.
 
 ```bash
- git clone https://github.com/KarthikUdyawar/URL-Shorten
+git clone https://github.com/KarthikUdyawar/URL-Shorten
 ```
 
 ```bash
