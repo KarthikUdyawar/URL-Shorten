@@ -2,7 +2,7 @@
  URL shortener using python
 
 ## Screenshot
-![alt text](https://github.com/KarthikUdyawar/URL-Shorten/blob/main/Screenshot.png)
+![Screenshot of the app](https://github.com/KarthikUdyawar/URL-Shorten/blob/main/Screenshot.png)
 
 
 ## Setup & Installation
