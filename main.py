@@ -11,7 +11,7 @@ class App:
         self.root.geometry("%dx%d" % (self.w, self.h))
         self.root.bind("<Escape>", self.quit)
         self.root.resizable(False,False)
-        self.icon = PhotoImage(file = 'icon.png')
+        self.icon = PhotoImage(file = 'images/icon.png')
         self.root.iconphoto(False, self.icon)
         
         self.url_var = StringVar()
