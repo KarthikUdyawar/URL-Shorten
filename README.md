@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/KarthikUdyawar/URL-Shorten">
-    <img src="images/icon.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/KarthikUdyawar/URL-Shorten/refs/heads/main/images/icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">URL-Shorten</h3>
