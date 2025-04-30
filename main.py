@@ -1,9 +1,10 @@
 """URL Shortener App using Tkinter and Pyshorteners."""
 
-from tkinter import Button, Entry, Label, PhotoImage, StringVar, Tk
+from tkinter import Button, Entry, Label, StringVar, Tk
 
 import pyperclip
 import pyshorteners as ps
+from PIL import Image, ImageTk
 
 
 class App:
@@ -18,8 +19,8 @@ class App:
         self.root.bind("<Escape>", self.quit)
         self.root.resizable(False, False)
 
-        # Set the application icon
-        self.icon = PhotoImage(file="images/icon.png")
+        # Set the application icon using Pillow
+        self.icon = ImageTk.PhotoImage(Image.open("images/icon.ico"))
         self.root.iconphoto(False, self.icon)
 
         # Variables
