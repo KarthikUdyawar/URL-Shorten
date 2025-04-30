@@ -1,17 +1,29 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+
+requires = [ "poetry-core>=2,<3" ]
+
 [project]
 name = "url-shorten"
 version = "0.2.0"
 description = "A simple URL shortener built with Python."
-authors = [
-    { name = "Karthik Udyawar", email = "karthikajitudy@gmail.com" }
-]
 readme = "README.md"
+authors = [
+  { name = "Karthik Udyawar", email = "karthikajitudy@gmail.com" },
+]
 requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
 dependencies = [
-    "pyshorteners>=1.0.1,<2.0.0",
-    "pyperclip>=1.9.0,<2.0.0",
+  "pillow>=11.2.1,<12",
+  "pyperclip>=1.9,<2",
+  "pyshorteners>=1.0.1,<2",
 ]
 
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
