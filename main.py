@@ -1,7 +1,7 @@
 """URL Shortener App using Tkinter and Pyshorteners."""
 
 import os
-from tkinter import Button, Entry, Frame, Label, StringVar, Tk
+from tkinter import CENTER, Button, Entry, Frame, Label, StringVar, Tk
 
 import pyperclip
 import pyshorteners as ps
@@ -19,7 +19,6 @@ class URLShortenerApp(Tk):
         self.title("URL Shortener")
         self.geometry("600x250")
         self.minsize(400, 250)
-        self.bind("<Escape>", self.quit)
         self.configure(padx=20, pady=20)
 
         # Load icon
@@ -30,6 +29,9 @@ class URLShortenerApp(Tk):
 
         # UI setup
         self.setup_ui()
+
+        # Binds
+        self.bind("<Escape>", self.quit)
 
         # Set focus
         self.url_entry.focus_set()
@@ -47,7 +49,7 @@ class URLShortenerApp(Tk):
     def setup_ui(self):
         """Sets up all UI components."""
         main_frame = Frame(self)
-        main_frame.pack(fill="both", expand=True)
+        main_frame.place(relx=0.5, rely=0.5, anchor=CENTER, relwidth=0.8)
 
         # Header
         header_frame = Frame(main_frame)
